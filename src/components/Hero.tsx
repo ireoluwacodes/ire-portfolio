@@ -26,15 +26,10 @@ export default function Hero() {
                 animationDelay: `${Math.random() * 2}s`,
                 animationDuration: `${Math.random() * 10 + 10}s`,
               }}
-            //   css={{
-            //     animation: "float 15s infinite linear",
-            //   }}
+
             />
           ))}
         </div>
-
-        {/* Grid lines for futuristic effect */}
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0wIDBoNjB2NjBIMHoiLz48cGF0aCBkPSJNNjAgMEgwdjYwaDYwVjB6TTMwIDMwaDMwVjBoLTMwdjMwek0zMCA2MFYzMEgwdjMwaDMweiIgZmlsbD0iIzIwMzA0NSIgZmlsbC1vcGFjaXR5PSIuMSIvPjwvZz48L3N2Zz4=')] opacity-20"></div>
       </div>
 
       <div className="container mx-auto px-6 z-10">
@@ -53,9 +48,8 @@ export default function Hero() {
           >
             <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-cyan-400 glow relative">
               <img
-                src="/placeholder.svg?height=400&width=400"
+                src="/image.png"
                 alt="Profile Picture"
-                // fill
                 className="object-cover"
               />
             </div>
@@ -76,20 +70,18 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-500 glow-text"
             >
-              John Doe
+              Ireoluwacodes
             </motion.h1>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              <h2 className="text-2xl md:text-3xl font-medium mb-6 text-cyan-300">
-                Fullstack Developer
+              <h2 className="text-xl md:text-2xl font-medium mb-6 text-cyan-300">
+                Fullstack Developer & Cloud Enthusiast
               </h2>
-              <p className="text-lg md:text-xl text-gray-300 mb-8">
-                I build exceptional digital experiences with modern
-                technologies. Specializing in both frontend and backend
-                development to create seamless, responsive applications.
+              <p className="text-sm md:text-lg text-gray-300 mb-8">
+                I love building cool stuff on the web—whether it's a sleek interface or a solid backend that just works. Lately, I've been diving into cloud tools and finding smarter ways to ship and scale projects.
               </p>
               <motion.div
                 initial={{ opacity: 0 }}
@@ -107,26 +99,6 @@ export default function Hero() {
           </motion.div>
         </motion.div>
       </div>
-
-      {/* <style jsx>{`
-        @keyframes float {
-          0% {
-            transform: translateY(0) translateX(0);
-          }
-          25% {
-            transform: translateY(-20px) translateX(10px);
-          }
-          50% {
-            transform: translateY(0) translateX(20px);
-          }
-          75% {
-            transform: translateY(20px) translateX(10px);
-          }
-          100% {
-            transform: translateY(0) translateX(0);
-          }
-        }
-      `}</style> */}
     </section>
   );
 }
